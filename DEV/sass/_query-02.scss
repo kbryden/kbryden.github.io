@@ -1,0 +1,44 @@
+@media screen and (min-width: 700px){
+  body {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .main-header p {
+    font-size: 1.25em;
+    line-height: 1.35em;
+  }
+
+  main {
+    padding: .5rem;
+  }
+
+  section {
+    width: 480px;
+    margin: 3rem auto;
+    border: .1rem solid black;
+  }
+
+  .role-text {
+    width: 8rem;
+  }
+
+  section img {
+    position: relative;
+    right: -4.5rem;
+    width: 70%;
+  }
+
+  .circle {
+    position: relative;
+    right: 1%;
+    width: 37rem;
+    height: 37rem;
+    background-color: #fff;
+    border: .1rem solid #d6a722;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+}

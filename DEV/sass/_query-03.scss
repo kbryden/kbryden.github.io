@@ -1,0 +1,26 @@
+@media screen and (min-width: 1080px){
+  .main-header p {
+    font-size: 1.25em;
+  }
+
+  main {
+    padding: .5rem;
+  }
+
+  section {
+    width: 1030px;
+    height: 700px;
+  }
+
+  .circle {
+    position: absolute;
+    right: 3%;
+    width: 32rem;
+    height: 32rem;
+  }
+
+  .section-copy {
+    width: 30rem;
+    float: left;
+  }
+}
