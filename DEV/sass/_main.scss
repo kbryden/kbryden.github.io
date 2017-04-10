@@ -203,6 +203,9 @@ section {
 }
 
 /*carousel styling*/
+.carousel {
+  position: relative;
+}
 
 .img-lg {
   width: 90%;
@@ -211,17 +214,16 @@ section {
 }
 
 .w3-display-left {
-  position: relative;
-  top: 10rem;
+  position: absolute;
+  top: 50%;
   left: 0;
-  height: 2rem;
+  text-decoration: none;
 }
 
 .w3-display-right {
-  position: relative;
-  top: 10rem;
+  position: absolute;
+  top: 50%;
   right: 0;
-  height: 2rem;
 }
 
 
