@@ -1,5 +1,3 @@
-//Response, using jQuery, to at least two different user interaction events
-
 // to open nav
 var navButton = document.querySelector('.nav-icon');
 navButton.addEventListener('click', function() {
@@ -21,9 +19,21 @@ closeButton.addEventListener('click', function() {
 });
 
 
-//hover over nav icon
+//carousel
+var slideIndex = 1;
+showDivs(slideIndex);
 
-//$('.nav-icon').hover(function() {
-//  $(this).fadeOut(100);
-//  $(this).fadeIn(100);
-//});
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("img-lg");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}

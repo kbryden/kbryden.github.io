@@ -197,9 +197,33 @@ section {
   cursor: pointer;
 }
 
-.img-lg {
-  width: 100%;
+.git-script {
+  height: 20rem;
+  overflow: scroll;
 }
+
+/*carousel styling*/
+
+.img-lg {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.w3-display-left {
+  position: relative;
+  top: 10rem;
+  left: 0;
+  height: 2rem;
+}
+
+.w3-display-right {
+  position: relative;
+  top: 10rem;
+  right: 0;
+  height: 2rem;
+}
+
 
 
    /*footer*/
@@ -210,7 +234,7 @@ footer {
   @include tablet {
     height: 10rem;
   };
-  
+
   width: 100%;
   color: #d9d5df;
   background-color: HSLA(60, 100%, 1%, .70);
