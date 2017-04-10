@@ -1,0 +1,55 @@
+.main-header {
+    width: 100%;
+    height: 40em;
+    position: relative;
+
+    img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover;
+    }
+
+    p {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      overflow: hidden;
+      color: #ffffff;
+      text-shadow: .1em .1em .5em HSLA(276, 19%, 5%, 1.00);
+
+      @include tablet {
+        font-size: 1.25em;
+        line-height: 1.35em;
+      };
+
+      @include laptop {
+        font-size: 1.25em;
+      };
+    }
+
+    h1 {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: 4em;
+      line-height: 130%;
+      overflow: hidden;
+      color: #fff;
+    }
+}

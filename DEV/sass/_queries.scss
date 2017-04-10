@@ -1,0 +1,29 @@
+@mixin largephone {
+  @media #{$largephone-width} {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media #{$phablet-width} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet-width} {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media #{$laptop-width} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}
