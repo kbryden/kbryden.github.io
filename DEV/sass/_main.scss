@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-size: .9em;
 
+  .clearfix {
+    padding: 1rem;
+  }
+
   @include tablet {
     font-size: 1.2em;
     line-height: 1.5em;
@@ -40,10 +44,10 @@ body {
 
 section {
   padding: 2rem;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
   background-color: #fff;
 
-  .main-img {
+  .main-img, .main-gif {
     width: 100%;
   }
 
@@ -52,6 +56,12 @@ section {
     margin: 3rem auto;
 
     .main-img {
+      position: relative;
+      right: -4.5rem;
+      width: 70%;
+    }
+
+    .main-gif {
       position: relative;
       right: -4.5rem;
       width: 70%;
@@ -68,29 +78,33 @@ section {
       margin: 0;
       padding: 0;
     }
+
+    .none {
+      border: none;
+      display: block;
+    }
   };
 
   @include laptop {
     width: 1030px;
 
-    .no-style {
-      position: relative;
-      right: -60%;
-      width: 50%;
-      margin: 0;
-      padding: 0;
+    .main-gif {
+      width: 40%;
+    }
+
+    .float-left {
+      float: left;
     }
 
     .circle {
       position: absolute;
       right: 3%;
-      width: 32rem;
-      height: 32rem;
+      width: 35rem;
+      height: 35rem;
     }
 
     .section-copy {
       width: 30rem;
-      float: left;
     }
 
     @include desktop {
@@ -103,7 +117,6 @@ section {
 
     .section-copy {
       width: 35rem;
-      float: left;
     }
     };
   };
@@ -128,13 +141,6 @@ section {
       border: .1rem solid black;
     };
 
-    @include laptop {
-      height: 700px;
-    };
-
-    @include desktop {
-      height: 700px;
-    };
 }
 
 .role-text {
@@ -176,23 +182,9 @@ section {
   cursor: pointer;
 }
 
-.gif-style {
-  width: 100%;
-
-  @include tablet {
-    width: 480px;
-    margin: auto;
-    display: block;
-  }
-
-  @include laptop {
-    width: 600px;
-  };
-}
-
 .lgicon-img {
-  height: 10rem;
-  padding: 1rem;
+  width: 30%;
+  padding: .1rem;
   float: left;
   cursor: pointer;
 }
@@ -207,7 +199,7 @@ section {
   position: relative;
 }
 
-.img-lg {
+.img-lg, .img-lg-2 {
   width: 90%;
   display: block;
   margin: auto;
@@ -231,10 +223,10 @@ section {
    /*footer*/
 
 footer {
-  height: 8rem;
+  height: 10rem;
 
   @include tablet {
-    height: 10rem;
+    height: 12rem;
   };
 
   width: 100%;
@@ -256,5 +248,5 @@ footer i:hover {
 
 .social {
  float: right;
- padding: 1em 2em 0 1em;
+ padding: 2rem 2rem 0 1rem;
 }
