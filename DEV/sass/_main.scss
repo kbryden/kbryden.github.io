@@ -16,13 +16,15 @@ body {
   main {
     background-color: #fff;
     width: 100%;
+    margin: 0;
+    padding: 0;
 
     @include tablet {
-      padding: .5rem;
+      padding: .5rem 0;
     };
 
     @include laptop {
-      padding: .5rem;
+      padding: .5rem 0;
     };
   }
 
@@ -197,10 +199,11 @@ section {
 /*carousel styling*/
 .carousel {
   position: relative;
+  margin: auto;
 }
 
 .img-lg, .img-lg-2 {
-  width: 90%;
+  width: 85%;
   display: block;
   margin: auto;
 }
@@ -249,4 +252,5 @@ footer i:hover {
 .social {
  float: right;
  padding: 2rem 2rem 0 1rem;
+
 }
