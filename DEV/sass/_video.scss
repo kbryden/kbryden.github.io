@@ -1,0 +1,53 @@
+/* Video code was taken form the following site
+http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video*/
+
+video.bgvid, img.bgvid{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 500px) {
+  header {
+      background-size: cover;
+  }
+
+  img.bgvid, video.bgvid {
+      display: none;
+  }
+}
+
+/*Button for video */
+
+#vidpause {
+    background-color: hsla(243, 13%, 29%, .70);
+    border: none;
+    color: white;
+    padding: .25em 1.25em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+video.bgvid {
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; }
+
+img.bgvid {
+  opacity: .90;
+}

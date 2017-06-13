@@ -1,0 +1,256 @@
+body {
+  font-family: Georgia, "PT Serif", serif;
+  line-height: 1.35em;
+  margin: 0;
+  font-size: .9em;
+
+  .clearfix {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  };
+
+  main {
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    @include tablet {
+      padding: .5rem 0;
+    };
+
+    @include laptop {
+      padding: .5rem 0;
+    };
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3, .name {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 800;
+  }
+
+  h2 {
+    padding-top: 1rem;
+  }
+}
+
+/*Section styling */
+
+section {
+  padding: 2rem;
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+
+  .main-img, .main-gif {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 480px;
+    margin: 3rem auto;
+
+    .main-img {
+      position: relative;
+      right: -4.5rem;
+      width: 70%;
+    }
+
+    .main-gif {
+      position: relative;
+      right: -4.5rem;
+      width: 70%;
+    }
+
+    .circle {
+      position: relative;
+      right: 1%;
+      width: 37rem;
+      height: 37rem;
+      background-color: #fff;
+      border: .1rem solid #d6a722;
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .none {
+      border: none;
+      display: block;
+    }
+  };
+
+  @include laptop {
+    width: 1030px;
+
+    .main-gif {
+      width: 40%;
+    }
+
+    .float-left {
+      float: left;
+    }
+
+    .circle {
+      position: absolute;
+      right: 3%;
+      width: 35rem;
+      height: 35rem;
+    }
+
+    .section-copy {
+      width: 30rem;
+    }
+
+    @include desktop {
+      width: 1030px;
+
+    .circle {
+      width: 35rem;
+      height: 35rem;
+    }
+
+    .section-copy {
+      width: 35rem;
+    }
+    };
+  };
+
+  h1, h2 {
+    padding: 1rem 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-top: .3rem solid black;
+    border-bottom: .3rem solid black;
+  }
+
+  h3 {
+    color: #00606e;
+  }
+}
+
+.main-section {
+  border-bottom: .1rem solid black;
+
+    @include tablet {
+      border: .1rem solid black;
+    };
+
+}
+
+.role-text {
+  width: 5rem;
+  float: left;
+
+  @include largephone{
+    width: 6rem;
+  };
+
+  @include phablet {
+    width: 7rem;
+  };
+
+  @include tablet {
+    width: 10rem;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.more-button {
+  background-color: #00606e; /* teal */
+  border: .1rem solid #fff;
+  color: white;
+  padding: 12px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  box-shadow: 3px 3px 4px HSLA(0, 0%, 0%, .35);
+  width: 12rem;
+  cursor: pointer;
+}
+
+.lgicon-img {
+  width: 30%;
+  padding: .1rem;
+  float: left;
+  cursor: pointer;
+}
+
+.git-script {
+  height: 20rem;
+  overflow: scroll;
+}
+
+/*carousel styling*/
+.carousel {
+  position: relative;
+  margin: auto;
+}
+
+.img-lg, .img-lg-2 {
+  width: 85%;
+  display: block;
+  margin: auto;
+}
+
+.w3-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-decoration: none;
+}
+
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+
+
+   /*footer*/
+
+footer {
+  height: 10rem;
+
+  @include tablet {
+    height: 12rem;
+  };
+
+  width: 100%;
+  color: #d9d5df;
+  background-color: HSLA(60, 100%, 1%, .70);
+  text-align: center;
+  font-size: .75em;
+}
+
+footer i {
+  color: #d9d5df;
+  padding: .15em;
+}
+
+footer i:hover {
+  color: #d6a722;
+  text-decoration: none;
+}
+
+.social {
+ float: right;
+ padding: 2rem 2rem 0 1rem;
+
+}
