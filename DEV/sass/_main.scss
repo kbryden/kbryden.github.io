@@ -13,6 +13,11 @@ body {
     line-height: 1.5em;
   };
 
+  .main-nav-closed a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   main {
     background-color: #fff;
     width: 100%;
@@ -28,17 +33,14 @@ body {
     };
   }
 
-  a {
-    text-decoration: none;
-  }
-
   h1, h2, h3, .name {
     font-family: "Proxima Nova", sans-serif;
     font-weight: 800;
+    line-height: normal;
   }
 
   h2 {
-    padding-top: 1rem;
+    font-weight: 500;
   }
 }
 
@@ -51,6 +53,12 @@ section {
 
   .main-img, .main-gif {
     width: 100%;
+  }
+
+  a {
+    font-family: Georgia, "PT Serif", serif;
+    color: #d6a722;
+    text-transform: capitalize;
   }
 
   @include tablet {
@@ -123,12 +131,12 @@ section {
     };
   };
 
-  h1, h2 {
+  h1 {
     padding: 1rem 0.2rem;
     text-transform: uppercase;
     letter-spacing: .1em;
-    border-top: .3rem solid black;
-    border-bottom: .3rem solid black;
+    border-top: .2rem solid black;
+    border-bottom: .2rem solid black;
   }
 
   h3 {
@@ -137,10 +145,10 @@ section {
 }
 
 .main-section {
-  border-bottom: .1rem solid black;
+  border-bottom: .01rem solid black;
 
     @include tablet {
-      border: .1rem solid black;
+      border: .01rem solid black;
     };
 
 }
