@@ -32,6 +32,20 @@ body {
       padding: .5rem 0;
     };
   }
+    
+    button {
+        border: none;
+        font-size: 16px;
+        padding: .5rem .5rem 0 1rem;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    .backbutton:hover {
+       color: HSLA(41, 68%, 54%, 1.00);
+       text-decoration: none;
+    }
 
   h1, h2, h3, .name {
     font-family: "Proxima Nova", sans-serif;
@@ -190,6 +204,12 @@ section {
   box-shadow: 3px 3px 4px HSLA(0, 0%, 0%, .35);
   width: 12rem;
   cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.more-button:hover {
+    background-color: HSLA(41, 68%, 54%, 1.00);
 }
 
 .lgicon-img {

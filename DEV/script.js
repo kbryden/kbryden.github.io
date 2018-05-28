@@ -51,3 +51,8 @@ pauseButton = document.getElementById("vidpause");
 function vidFade() {
     vid.classList.add("stopfade");
 };
+
+//go back button
+function goBack() {
+    window.history.back()
+}
