@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CSS Pattern Library</title>
+        <link rel="stylesheet" href="css/css.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Merriweather|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+            <div class="main-header">
+                <h1>Pattern Library</h1>
+                <p>A practical approach to streamlining workflows<br> and coding processes across teams.</p>
+            </div>
+		</header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html" title="Home">Home</a></li>
+                <li><a href="gridsystems.html" title="Grid Systems">Grid Systems</a></li>
+                <li><a href="typography.html" title="Typography Styles">Typography Styles</a></li>
+                <li class="current"><a href="formelements.html" title="Form Elements">Form Elements</a></li>
+                <li><a href="navigation.html" title="Navigation">Navigation</a></li>
+                <li><a href="tables.html" title="Tables">Tables</a></li>
+                <li><a href="lists.html" title="Lists">Lists</a></li>
+                <li><a href="dashboardelements.html" title="Dashboard Elements">Dashboard Elements</a></li>
+                <li><a href="alerts.html" title="Alerts">Alerts</a></li>
+                <li><a href="modals.html" title="Modals">Modals</a></li>
+            </ul>
+		</nav>
+		<main class="main">
+            <h1>Form Elements</h1>
+            <h2>Buttons</h2>
+            <p>Buttons can be styled in many different ways. There should be atleast two styles.</p>
+            <a href="#!" title="Button"><button class="button" type="button">Button</button></a>
+            <a href="#!" title="Alt-Button"><button class="alt-button" type="submit">Alt-Button</button></a>
+            <a href="#!" title="Clear-Button"><button class="dropdown-button" type="submit">Drop-Down &nbsp;<i class="fas fa-caret-down"></i></button></a>
+            <div class="formelements">
+                <h2>Inputs and Fields</h2>
+                    <h3>Inputs</h3>
+                    <p>It's important to get a form right. A bad user experience will discourage the user from completing the form. Make sure to lighten the placeholder text so that the form doesn't look completed.</p>
+                    <form>
+                        <div class="col-1-2-left">
+                            <label for="first_name">Full Box</label><br>
+                            <input placeholder="Jane" type="text" class="simpleinput">
+                        </div>
+                        <div class="col-1-2-right">
+                            <label for="first_name">Partial Box</label><br>
+                            <input placeholder="Doe" type="text" class="partial_box">
+                        </div>
+                        <div class="col-1-2-left">
+                            <label for="first_name">Single Line</label><br>
+                            <input placeholder="Jane" type="text" class="single_line">
+                        </div>
+                    </form>
+                    <h3>Input with Button</h3>
+                    <form>
+                        <div class="col-1-2-left bg">
+                            <label for="first_name">Input Full Box with Button</label><br>
+                            <input placeholder="Enter Text" type="text" class="simpleinputclass input-with-button">
+                            <a href="#!" title="Submit"><button class="alt-button submitbutton" type="submit">Submit</button></a>
+                        </div>
+                        <div class="col-1-2-right bg">
+                            <label for="first_name">Input Full Box with Search Icon</label><br>
+                            <input placeholder="Type Here..." type="text" class="simpleinputclass input-with-button">
+                            <a href="#!" title="Search"><button class="alt-button searchbutton" type="submit"><i class="fas fa-search"></i></button></a>
+                        </div>
+                    </form>
+                    <h3>Input with Error or Required Message</h3>
+                    <form>
+                        <div>
+                            <label for="first_name">Error Messages</label><br>
+                            <input placeholder="Invalid Input" type="text" class="simpleinput">
+                            <p class="error-message"><i class="fas fa-exclamation-circle"></i> This is an error message.</p>
+                        </div>
+                    </form>
+                    <h3>Dropdowns</h3>
+                    <div class="dropdown-closed">
+                          <a href="#!" title="Clear-Button"><button class="dropdown-button" type="submit">Drop-Down &nbsp;<i class="fas fa-caret-down"></i></button></a>
+                    </div>
+                    <div class="dropdown-open">
+                         <ul>
+                            <li><a href="#!" title="Element 1">one</a></li>
+                            <li><a href="#!" title="Element 2">two</a></li>
+                            <li><a href="#!" title="Element 3">three</a></li>
+                            <li><a href="#!" title="Element 4">four</a></li>
+                        </ul>
+                    </div>
+                    <h3>Calendar or Date Picker</h3>
+                    <h3>Date and Time</h3>
+                <h2>Radio Buttons and Checkboxes</h2>
+                    <form action="">
+                          <input class="radio" type="radio" name="options" value="An Option"> An Option<br>
+                          <input type="radio" name="options" value="An Option"> An Option<br>
+                          <input type="radio" name="options" value="An Option"> An Option
+                    </form>
+                <h2>Switches and Toggles</h2>
+                <h2>Help Pop-Ups</h2>
+            </div>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html
