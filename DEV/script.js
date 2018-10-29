@@ -1,4 +1,6 @@
 // to open nav
+$( document ).ready(function() {
+    
 var navButton = document.querySelector('.nav-icon');
 navButton.addEventListener('click', function() {
   document
@@ -9,7 +11,7 @@ navButton.addEventListener('click', function() {
 
 //to close nav
 var closeButton = document.querySelector('.close-icon');
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
     document
       .querySelector('body')
       .classList
@@ -29,12 +31,13 @@ function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("img-lg");
     if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
+    if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block";
+   x[slideIndex -1].style.display = "block";
 }
+
 
 //http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video
 var closeButton = document.querySelector('.close-icon');
@@ -56,3 +59,5 @@ function vidFade() {
 function goBack() {
     window.history.back()
 }
+    
+});
