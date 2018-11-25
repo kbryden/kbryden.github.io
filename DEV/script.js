@@ -1,21 +1,71 @@
-// to open nav
-$( document ).ready(function() {
+var navButton = document.querySelector(".nav-icon");
+var closeButton = document.querySelector(".close-icon");
+var modalButton = document.querySelector('.btnsimplemodal');
+var modalcloseButton = document.querySelector('.close-icon');
+
+//http://jqueryui.com/datepicker/#icon-trigger
+$("document").ready(function() {
     
-var navButton = document.querySelector('.nav-icon');
-navButton.addEventListener('click', function() {
+$(function () {
+    $( "#datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "icons/calendar.png",
+      buttonImageOnly: true,
+      buttonText: "Select date"
+    });
+  } );
+
+  $( function() {
+    $( "#datepicker2" ).datepicker();
+  } );
+
+
+// to open nav
+function toggleNav() {
+  document
+    .querySelector("body")
+    .classList
+    .toggle("nav-open");
+};
+
+//to close nav 
+function toggleNavClose() {
+    document
+      .querySelector("body")
+      .classList
+      .remove("nav-open");
+};
+
+// to open modal
+function toggleModal() {
   document
     .querySelector('body')
     .classList
-    .toggle('nav-open');
-});
+    .toggle('simple-modal-open');
+};
 
-//to close nav
-var closeButton = document.querySelector('.close-icon');
-closeButton.addEventListener('click', function () {
+//to close modal
+function toggleModalClose() {
     document
       .querySelector('body')
       .classList
-      .toggle('nav-open');
+      .remove('simple-modal-open');
+};
+
+    //written in JQuery
+    
+$(navButton).click(toggleNav);
+$(closeButton).click(toggleNavClose);
+$(modalButton).click(toggleModal);
+$(modalcloseButton).click(toggleModalClose);
+    
+    //written in Vanilla JavaScript
+//navButton.addEventListener("click", toggleNav); 
+//closeButton.addEventListener("click", toggleNavClose);
+//modalButton.addEventListener("click", toggleModal);
+//modalcloseButton.addEventListener("click", toggleModalClose);
+                                  
+
 });
 
 
@@ -48,25 +98,5 @@ function showSlides(n) {
 }
 
 
-//http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video
-var closeButton = document.querySelector('.close-icon');
-closeButton.addEventListener('click', function() {
-    console.log('close it!');
-    document
-      .querySelector('body')
-      .classList
-      .toggle('nav-open');
-});
 
-var vid = document.getElementById("bgvid"),
-pauseButton = document.getElementById("vidpause");
-function vidFade() {
-    vid.classList.add("stopfade");
-};
 
-//go back button
-function goBack() {
-    window.history.back()
-}
-    
-});
