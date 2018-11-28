@@ -23,6 +23,30 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+      
+      /*grid system*/
+      .col-1-2-left {
+        float: left;
+	    width: 45%;
+        padding: 0 1rem 0 0;
+    }
+
+    .col-1-2-right {
+        float: left;
+        width: 50%;
+    }
+      
+      .img-fifty {
+        max-width: 100%;
+        padding: 1rem;
+      }
+
+      .quote {
+        padding: 2rem 15%;
+        font-family: "Proxima Nova", sans-serif;
+        font-weight: 400;
+        font-size: 2em;
+      }
 
     @include tablet {
       padding: .5rem 0;
@@ -59,6 +83,9 @@ body {
 }
 
 /*Section styling */
+.section-bg-color {
+    background-color: #f7f7f7;
+}
 
 section {
   padding: 2rem;
