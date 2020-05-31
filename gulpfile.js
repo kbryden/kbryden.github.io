@@ -7,6 +7,15 @@ var server = require('gulp-webserver');
 
 sass.compiler = require('node-sass');
 
+const compileSass = () => {
+  return gulp
+    .src('./DEV/sass/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./PUBLIC/css'));
+};
+
 gulp.task('server', function () {
   gulp.src('./').pipe(
     server({
@@ -18,14 +27,9 @@ gulp.task('server', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp
-    .src('./DEV/sass/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./PUBLIC/css'));
+  return compileSass;
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./DEV/sass/*.scss', () => gulp.run('sass'));
+  gulp.watch('./DEV/sass/*.scss', compileSass);
 });
