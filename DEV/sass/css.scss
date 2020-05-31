@@ -3,6 +3,9 @@
 @import 'queries';
 @import 'main';
 @import 'header';
-@import "nav";
-@import "video";
+@import 'nav';
+@import 'video';
 
+body {
+  background-color: red !important;
+}
