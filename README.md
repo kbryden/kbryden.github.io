@@ -21,3 +21,9 @@ To build everything once:
 ```
 npm run build
 ```
+
+## Getting a Local Server
+
+```
+npm run server
+```

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp sass:watch",
+    "server": "gulp server",
     "build": "gulp sass"
   },
   "repository": {
