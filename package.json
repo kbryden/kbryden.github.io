@@ -1,0 +1,30 @@
+{
+  "name": "kbryden.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp sass:watch",
+    "server": "gulp server",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbryden/kbryden.github.io.git"
+  },
+  "keywords": [],
+  "author": "Kristi Bryden (http://kristibryden.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbryden/kbryden.github.io/issues"
+  },
+  "homepage": "https://github.com/kbryden/kbryden.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.14.1"
+  }
+}
