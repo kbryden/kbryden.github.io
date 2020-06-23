@@ -3,6 +3,7 @@ body {
   line-height: 1.35em;
   margin: 0;
   font-size: .9em;
+  color: #353333;
 
   .clearfix {
     padding: 1rem;
@@ -66,7 +67,7 @@ body {
     
     button {
         border: none;
-        font-size: 16px;
+        font-size: 1em;
         padding: .5rem .5rem 0 1rem;
         cursor: pointer;
         -webkit-transition-duration: 0.4s; /* Safari */
@@ -85,7 +86,7 @@ body {
   }
 
   h2 {
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -180,23 +181,27 @@ section {
   };
 
   h1 {
-    padding: 1rem 0.2rem;
+    padding: .01rem 0.2rem;
     text-transform: uppercase;
     letter-spacing: .1em;
-    border-top: .2rem solid black;
-    border-bottom: .2rem solid black;
+    color: #353333;
+    //border-top: .2rem solid black;
+    //border-bottom: .2rem solid black;
   }
 
   h3 {
     color: #00606e;
+    font-size: .6em;
+    margin: 0 -1em -1em 0;
+    padding: 0;
   }
 }
 
 .main-section {
-  border-bottom: .01rem solid black;
+  border-bottom: .01rem solid #0b0b0b;
 
     @include tablet {
-      border: .01rem solid black;
+      border: .01rem solid #0b0b0b;
     };
 
 }
@@ -223,9 +228,9 @@ section {
 }
 
 .more-button {
-  background-color: #00606e; /* teal */
+  background-color: #d6a722; 
   border: .1rem solid #fff;
-  color: white;
+  color: #fff;
   padding: 12px 35px;
   text-align: center;
   text-decoration: none;
@@ -235,7 +240,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  box-shadow: 3px 3px 4px HSLA(0, 0%, 0%, .35);
+  //box-shadow: 3px 3px 4px HSLA(0, 0%, 0%, .35);
   width: 12rem;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -243,7 +248,7 @@ section {
 }
 
 .more-button:hover {
-    background-color: HSLA(41, 68%, 54%, 1.00);
+    background-color: #e7f2f7;
 }
 
 .lgicon-img {
