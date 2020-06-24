@@ -1,10 +1,10 @@
 .nav-icon {
   position: fixed;
-  top: 1em;
-  right: 1em;
+  top: 1rem;
+  left: 1em;
   width: 1rem;
   height: 1rem;
-  color: #d6a723;
+  color: #3a3f40;
   cursor: pointer;
   z-index: 500;
     
@@ -16,8 +16,8 @@
 
 .name {
   position: fixed;
-  left: 1rem;
-  top: 1rem;
+  left: 5rem;
+  top: .55rem;
   font-size: 1.25em;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -48,12 +48,12 @@
     background-color: HSLA(274, 100%, 100%, .70);
     line-height: 2em;
     color: #0b0b0b;
-    text-align: center;
+    text-align: left;
 
     ul {
         list-style-type: none;
         position: relative;
-        margin-top: 1rem;
+        margin: 4rem -1.7rem;
     }
 
     li {
@@ -64,7 +64,7 @@
 
     a {
         text-decoration: none;
-        color: #d6a723;
+        color: #0b0b0b;
     }
 
     a:hover {
@@ -75,8 +75,8 @@
    .close-icon {
        font-style: normal;
        position: absolute;
-       right: 0;
-       padding: 1rem;
+       left: 0;
+       padding: 1rem 1.5rem;
        color: #d6a723;
        line-height: 1;
        cursor: pointer;
@@ -95,11 +95,19 @@
       display: block;
       position: fixed;
       top: 0;
-      right: 0;
+      left: 0;
       width: 100%;
       min-height: 100%;
       z-index: 100;
       background-color: HSLA(274, 100%, 100%, .90);
+       
+       @include tablet {
+         width: 50%;
+       }
+       
+       @include laptop {
+           width: 25%;
+       }
    }
 
    .page-content {

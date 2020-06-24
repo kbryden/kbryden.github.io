@@ -24,7 +24,7 @@
       text-align: left;
       position: absolute;
       top: 80%;
-      left: 36%;
+      left: 48%;
       transform: translate(-50%, -50%);
       margin: 0;
       overflow: hidden;
@@ -36,11 +36,13 @@
         font-size: .9em;
         line-height: 1.3em;
         width: 30rem;
+        left: 47%;
       };
 
       @include laptop {
         font-size: .9em;
         width: 45rem;
+        left: 38%;
       };
     }
 
