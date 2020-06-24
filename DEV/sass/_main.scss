@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia, "PT Serif", serif;
+  font-family: "Roboto", "Proxima Nova", sans-serif;
   line-height: 1.35em;
   margin: 0;
   font-size: .9em;
@@ -44,7 +44,7 @@ body {
 
       .quote {
         padding: 2rem 15%;
-        font-family: "Proxima Nova", sans-serif;
+        font-family: "PT Sans", "Proxima Nova", sans-serif;
         font-weight: 400;
         font-size: 2em;
       }
@@ -75,13 +75,13 @@ body {
     }
     
     .backbutton:hover {
-       color: HSLA(41, 68%, 54%, 1.00);
+       color: #f78ae0;
        text-decoration: none;
     }
 
   h1, h2, h3, .name {
-    font-family: "Proxima Nova", sans-serif;
-    font-weight: 800;
+    font-family: "PT Sans", "Proxima Nova", sans-serif;
+    font-weight: 600;
     line-height: normal;
   }
 
@@ -131,7 +131,7 @@ section {
       right: 1%;
       width: 37rem;
       height: 37rem;
-      background-color: #fff;
+      //background-color: #fff;
       //border: .1rem solid #d6a722;
       border-radius: 50%;
       margin: 0;
@@ -181,10 +181,10 @@ section {
   };
 
   h1 {
-    padding: .01rem 0.2rem;
+    padding: .01rem 0.2rem .01rem 0;
     text-transform: uppercase;
     letter-spacing: .1em;
-    color: #353333;
+    color: #00606e;
     //border-top: .2rem solid black;
     //border-bottom: .2rem solid black;
   }
@@ -198,11 +198,16 @@ section {
 }
 
 .main-section {
-  border-bottom: .01rem solid #0b0b0b;
+  border-bottom: .01rem solid #dedddb;
 
     @include tablet {
-      border: .01rem solid #0b0b0b;
+      border: .01rem solid #dedddb;
+      padding: 1.5em;
     };
+    
+    @include desktop {
+        padding: 3em;
+    }
 
 }
 
@@ -248,7 +253,7 @@ section {
 }
 
 .more-button:hover {
-    background-color: #e7f2f7;
+    background-color: #f78ae0;
 }
 
 .lgicon-img {
@@ -339,24 +344,28 @@ footer {
   };
 
   width: 100%;
-  color: #d9d5df;
+  color: #d6a723;
   background-color: HSLA(274, 100%, 100%, .70);
   text-align: center;
   font-size: .75em;
 }
 
-footer i {
-  color: #d9d5df;
+footer i, {
+  color: #d6a723;
   padding: .15em;
+  text-decoration: none;
 }
 
 footer i:hover {
-  color: #d6a722;
+  color: #f78ae0;
   text-decoration: none;
 }
 
 .social {
  float: right;
  padding: 2rem 2rem 0 1rem;
-
+    
+    a {
+       text-decoration: none; 
+    }
 }
