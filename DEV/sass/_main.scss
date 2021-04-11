@@ -1,16 +1,26 @@
 body {
-  font-family: "Roboto", "Proxima Nova", sans-serif;
+  font-family: "Baskerville", "Georgia", "Times New Roman", serif;
   line-height: 1.35em;
   margin: 0;
-  font-size: .9em;
-  color: #353333;
+  font-size: 12px;
+  color: #393f40;
+    
+ a {
+    color: #00bcc0;
+    text-decoration: none;
+  }
 
+ a:hover {
+       color: #dfa700;
+       text-decoration: none;
+   }
+    
   .clearfix {
     padding: 1rem;
   }
 
   @include tablet {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5em;
   };
 
@@ -44,8 +54,8 @@ body {
 
       .quote {
         padding: 2rem 15%;
-        font-family: "PT Sans", "Proxima Nova", sans-serif;
-        font-weight: 400;
+        font-family: 'Roboto', 'PT Sans', 'Open Sans', sans-serif;
+        font-weight: 600;
         font-size: 2em;
       }
       
@@ -79,14 +89,27 @@ body {
        text-decoration: none;
     }
 
-  h1, h2, h3, .name {
-    font-family: "PT Sans", "Proxima Nova", sans-serif;
-    font-weight: 600;
+  h1, h2 {
+    font-family: 'Roboto', 'PT Sans', 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
     line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: -.92px;
+    color: #393f40;
+    padding: 0;
+    margin: 6rem 0 0 0;
   }
 
-  h2 {
+  h3 {
+    font-family: 'Roboto', 'PT Sans', 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 1em;
+    line-height: normal;
+    letter-spacing: -.62px;
+    color: #dfa700;
+    padding: 0;
+    margin: .5rem 0 0 0;
   }
 }
 
@@ -96,16 +119,21 @@ body {
 }
 
 section {
-  padding: 2rem;
+  padding: 4rem;
   margin: 0 auto 0 auto;
   background-color: #fff;
+  box-shadow: 0 6px 5px 0 rgba(93, 89, 89, .2), 0 15px 20px 0 rgba(93, 89, 89, .19);
+
 
   .main-img, .main-gif {
     width: 100%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
   }
 
   a {
-    font-family: Georgia, "PT Serif", serif;
+    font-family: "Baskerville", "Georgia", "Times New Roman", serif;
     color: #d6a722;
     text-transform: capitalize;
   }
@@ -114,28 +142,10 @@ section {
     width: 480px;
     margin: 3rem auto;
 
-    .main-img {
-      position: relative;
-      right: -4.5rem;
-      width: 70%;
-    }
-
     .main-gif {
       position: relative;
       right: -4.5rem;
       width: 70%;
-    }
-
-    .circle {
-      position: relative;
-      right: 1%;
-      width: 37rem;
-      height: 37rem;
-      //background-color: #fff;
-      //border: .1rem solid #d6a722;
-      border-radius: 50%;
-      margin: 0;
-      padding: 0;
     }
 
     .none {
@@ -147,19 +157,8 @@ section {
   @include laptop {
     width: 1030px;
 
-    .main-gif {
-      width: 40%;
-    }
-
     .float-left {
       float: left;
-    }
-
-    .circle {
-      position: absolute;
-      right: 3%;
-      width: 35rem;
-      height: 35rem;
     }
 
     .section-copy {
@@ -169,32 +168,12 @@ section {
     @include desktop {
       width: 1030px;
 
-    .circle {
-      width: 35rem;
-      height: 35rem;
-    }
-
     .section-copy {
       width: 35rem;
     }
     };
   };
 
-  h1 {
-    padding: .01rem 0.2rem .01rem 0;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    color: #00606e;
-    //border-top: .2rem solid black;
-    //border-bottom: .2rem solid black;
-  }
-
-  h3 {
-    color: #00606e;
-    font-size: .6em;
-    margin: 0 -1em -1em 0;
-    padding: 0;
-  }
 }
 
 .main-section {
@@ -232,29 +211,6 @@ section {
   clear: both;
 }
 
-.more-button {
-  background-color: #d6a722; 
-  border: .1rem solid #fff;
-  color: #fff;
-  padding: 12px 35px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Proxima Nova", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  //box-shadow: 3px 3px 4px HSLA(0, 0%, 0%, .35);
-  width: 12rem;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.more-button:hover {
-    background-color: #f78ae0;
-}
 
 .lgicon-img {
   width: 30%;
@@ -268,86 +224,29 @@ section {
   overflow: scroll;
 }
 
-/*carousel styling https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/
-.carousel {
-  position: relative;
-  margin: auto;
-}
 
-.img-lg, .img-lg-2 {
-  width: 85%;
-  display: block;
-  margin: auto;
-}
 
-.prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  text-decoration: none;
-}
 
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
    /*footer*/
 
 footer {
-  height: 10rem;
-
-  @include tablet {
-    height: 12rem;
-  };
-
+  background-color: #393f40;
   width: 100%;
-  color: #d6a723;
-  background-color: HSLA(274, 100%, 100%, .70);
-  text-align: center;
-  font-size: .75em;
+  height: 30rem;
+  text-align: left;
+    
+    h1 {
+    color: #F7F7F7;
+    padding: 10;
+    margin: 0;
+  }
+    
+    h2 {
+    color: #F7F7F7;
+    font-size: 1em; 
+    text-transform: capitalize;
+    }
 }
 
 footer i, {
@@ -362,7 +261,7 @@ footer i:hover {
 }
 
 .social {
- float: right;
+ float: left;
  padding: 2rem 2rem 0 1rem;
     
     a {
