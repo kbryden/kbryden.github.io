@@ -122,8 +122,7 @@ section {
   padding: 4rem;
   margin: 0 auto 0 auto;
   background-color: #fff;
-  box-shadow: 0 6px 5px 0 rgba(93, 89, 89, .2), 0 15px 20px 0 rgba(93, 89, 89, .19);
-
+  box-shadow: 0 6px 5px 0 rgba(93, 89, 89, .2), 0 15px 20px 0 rgba(93, 89, 89, .19);   
 
   .main-img, .main-gif {
     width: 100%;
@@ -155,7 +154,7 @@ section {
   };
 
   @include laptop {
-    width: 1030px;
+    width: 780px;
 
     .float-left {
       float: left;
@@ -247,24 +246,51 @@ footer {
     h2 {
     color: #F7F7F7; 
     }
+    
+    i {
+      color: #F7F7F7;
+      padding: .15em;
+      text-decoration: none;
+    }
+    
+    i:hover {
+      color: #dfa700;
+      text-decoration: none;
+}
+    
 }
 
-footer i, {
-  color: #F7F7F7;
-  padding: .15em;
-  text-decoration: none;
-}
-
-footer i:hover {
-  color: #00bcc0;
-  text-decoration: none;
-}
 
 .social {
- float: left;
- padding: 2rem 2rem 0 1rem;
+ padding: 1rem 2rem 0 0;
     
     a {
        text-decoration: none; 
     }
 }
+
+.fa-stack-custom {
+    display: inline-block;
+    height: 2em;
+    line-height: 2.5em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.fa-stack-1x-c {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+
+.icon-background {
+    color: #F7F7F7;
+    }
+
+.dark {
+    color: #393f40;    
+    }
